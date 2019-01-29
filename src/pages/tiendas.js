@@ -8,27 +8,31 @@ const AllRecipes = ({ data }) => (
   <Layout>
     <Container>
       <h1>Tiendas</h1>
-      {/* <ul>
+      <ul>
         {data.allNodeTiendas.edges.map(({ node }) => (
           <li key={node.id}>{node.title}</li>
         ))}
-      </ul> */}
+      </ul>
     </Container>
   </Layout>
 )
 
 export default AllRecipes
 
-// export const tiendas = graphql`
-//   query { 
-//     allNodeTiendas {
-//       edges {
-//         node {
-//           id
-//           title
-//           field_location
-//         }
-//       }
-//     }
-//   }
-// `
+export const tiendas = graphql`
+  query { 
+    allNodeTiendas {
+      edges {
+        node {
+          id
+          title
+          field_location {
+            value
+            format
+            processed
+          }
+        }
+      }
+    }
+  }
+`

@@ -11,9 +11,16 @@ import constants from "../utils/constants"
 class IndexPage extends React.Component {
   render() {
     const data = this.props.data
+    console.log(data, 'data data data')
     return (
       <Layout>
         <div css={{ overflow: `hidden` }}>
+          {/* {data.allNodeTiendas.edges.map(({ node }) => {
+            <div>
+              {node.title}
+              {node.field_location}
+            </div>
+          })} */}
         </div>
       </Layout>
     )
@@ -21,6 +28,25 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage
+
+
+// export const dataQuery = graphql`
+//     query dataQuery {
+//     allNodeTiendas {
+//       edges {
+//         node {
+//           id 
+//           title
+//           field_location {
+//             value
+//             format
+//             processed
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 // export const pageQuery = graphql`
 //   query {
