@@ -6,7 +6,7 @@ module.exports = {
     {
       resolve: `gatsby-source-drupal`,
       options: {
-        baseUrl: `http://104.155.143.66/`,
+        baseUrl: `http://35.232.206.25/`,
         apiBase: `jsonapi`,
       },
     },
