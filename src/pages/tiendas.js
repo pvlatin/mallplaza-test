@@ -3,6 +3,14 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../layouts"
 import Container from "../components/container"
+import styled from 'styled-components'
+
+const TiendasGrid = styled.div`
+  display: grid;
+  /* padding: 3rem 1rem; */
+  /* grid-template-columns: repeat(6,1fr); */
+  grid-row-gap: 1rem;
+`
 
 const URL_BASE = 'http://35.232.206.25';
 
@@ -11,10 +19,13 @@ const AllRecipes = ({ data }) => (
     <Container>
       <h1>Tiendas</h1>
         {data.allNodeTienda.edges.map(({ node }) => (
-          <div key={node.id}>
+          <TiendasGrid key={node.id} >
+          <div>
             <h1>{node.title}</h1>
-            <img src={URL_BASE.concat(node.relationships.field_portada ? node.relationships.field_portada.uri.url : 'Image not found')} alt=""/>
+            <img width="250px" height="250px" src={URL_BASE.concat(node.relationships.field_portada ? node.relationships.field_portada.uri.url : 'Image not found')} alt=""/>
+            <p>{node.field_horario ? node.field_horario : ''}</p>
           </div>
+          </TiendasGrid>
         ))}
     </Container>
   </Layout>
