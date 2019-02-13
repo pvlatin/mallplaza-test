@@ -28,9 +28,10 @@ pipeline {
                 echo 'Testing...'
             }
         }
-        stage('Deploy') {
+        stage('Deploy production') {
             steps {
                 echo 'Deploying...'
+                googleStorageUpload bucket: 'gs://front-mallplaza', credentialsId: 'web2', pattern: 'public/*'
             }
         }
     }
