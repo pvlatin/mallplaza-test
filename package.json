@@ -5,11 +5,14 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "eslint-config-prettier": "^4.0.0",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-glamor": "^2.0.7",
     "gatsby-plugin-google-analytics": "^2.0.8",
     "gatsby-plugin-offline": "^2.0.20",
+    "gatsby-plugin-sass": "^2.0.10",
     "gatsby-plugin-sharp": "^2.0.16",
     "gatsby-plugin-typography": "^2.2.4",
     "gatsby-source-drupal": "^3.0.14",
@@ -17,6 +20,7 @@
     "glamor": "^2.20.40",
     "gray-percentage": "^2.0.0",
     "lodash": "^4.17.10",
+    "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-icons": "^2.2.7",
@@ -38,5 +42,8 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "start": "npm run develop"
+  },
+  "devDependencies": {
+    "eslint-plugin-prettier": "^3.0.1"
   }
 }

@@ -1,143 +1,72 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import gray from "gray-percentage"
-import Img from "gatsby-image"
+import React from 'react';
+import {Link, graphql} from 'gatsby';
 
-import Layout from "../layouts"
-import Container from "../components/container"
-import { rhythm } from "../utils/typography"
-import constants from "../utils/constants"
+import Layout from '../layouts';
+import Container from '../components/container';
+import styled from 'styled-components';
 
-class IndexPage extends React.Component {
-  render() {
-    const data = this.props.data
-    console.log(data, 'data data data')
-    return (
-      <Layout>
-        <div css={{ overflow: `hidden` }}>
-          {/* {data.allNodeTiendas.edges.map(({ node }) => {
-            <div>
-              {node.title}
-              {node.field_location}
-            </div>
-          })} */}
-        </div>
-      </Layout>
-    )
+const TiendasGrid = styled.div`
+  display: grid;
+  /* padding: 3rem 1rem; */
+  /* grid-template-columns: repeat(6,1fr); */
+  grid-row-gap: 1rem;
+`;
+
+const URL_BASE = 'http://35.232.206.25';
+
+const AllRecipes = ({data}) => (
+  <Layout>
+    <Container>
+      <h1 className="tiendas-title">Tiendas</h1>
+      {data.allNodeTienda.edges.map(({node}) => (
+        <TiendasGrid key={node.id} >
+          <div>
+            <h1>{node.title}</h1>
+            <img width="250px" height="250px" src={URL_BASE.concat(node.relationships.field_portada ? node.relationships.field_portada.uri.url : 'Image not found')} alt=""/>
+            <p>{node.field_horario ? node.field_horario : ''}</p>
+          </div>
+        </TiendasGrid>
+      ))}
+    </Container>
+  </Layout>
+);
+
+export default AllRecipes;
+
+export const tiendas = graphql`
+  query { 
+    allNodeTienda {
+      edges {
+        node {
+          id
+          title
+          field_local
+          field_nivel
+          field_sector
+          field_horario
+          field_telefono
+          field_sitio_web {
+            uri
+          }
+          relationships {
+            field_imagen_descuento_miniatura {
+              uri {
+                url
+              }
+            }
+            field_portada {
+              uri {
+                url
+              }
+            }
+            field_imagen_descuento_tienda {
+              uri {
+                url
+              }
+            }
+          }
+        }
+      }
+    }
   }
-}
-
-export default IndexPage
-
-
-// export const dataQuery = graphql`
-//     query dataQuery {
-//     allNodeTiendas {
-//       edges {
-//         node {
-//           id 
-//           title
-//           field_location {
-//             value
-//             format
-//             processed
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
-
-// export const pageQuery = graphql`
-//   query {
-//     topRecipe: allRecipes(sort: { fields: [createdAt] }, limit: 1) {
-//       edges {
-//         node {
-//           title
-//           fields {
-//             slug
-//           }
-//           relationships {
-//             image {
-//               relationships {
-//                 imageFile {
-//                   localFile {
-//                     childImageSharp {
-//                       fluid(maxWidth: 740, maxHeight: 555) {
-//                         ...GatsbyImageSharpFluid
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//     nextTwoPromotedRecipes: allRecipes(
-//       sort: { fields: [createdAt] }
-//       limit: 2
-//       skip: 1
-//     ) {
-//       edges {
-//         node {
-//           title
-//           fields {
-//             slug
-//           }
-//           relationships {
-//             category {
-//               name
-//             }
-//             image {
-//               relationships {
-//                 imageFile {
-//                   localFile {
-//                     childImageSharp {
-//                       fluid(maxWidth: 240, maxHeight: 240) {
-//                         ...GatsbyImageSharpFluid
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//     nextFourPromotedRecipes: allRecipes(
-//       sort: { fields: [createdAt] }
-//       limit: 4
-//       skip: 3
-//     ) {
-//       edges {
-//         node {
-//           title
-//           fields {
-//             slug
-//           }
-//           relationships {
-//             category {
-//               name
-//             }
-//             image {
-//               relationships {
-//                 imageFile {
-//                   localFile {
-//                     childImageSharp {
-//                       fluid(maxWidth: 475, maxHeight: 475) {
-//                         ...GatsbyImageSharpFluid
-//                       }
-//                     }
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+`;
