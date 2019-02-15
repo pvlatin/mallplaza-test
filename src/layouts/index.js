@@ -15,7 +15,7 @@ import '../scss/_builder.scss';
 class DefaultLayout extends React.Component {
   render() {
     return (
-      <div>
+      <div className="hey">
         <header
           css={{
             background: constants.paleYellow
