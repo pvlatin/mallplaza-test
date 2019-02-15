@@ -1,40 +1,62 @@
 import React from 'react';
 import {Link, graphql} from 'gatsby';
-
 import Layout from '../layouts';
-import Container from '../components/container';
 import styled from 'styled-components';
 
 const TiendasGrid = styled.div`
   display: grid;
-  /* padding: 3rem 1rem; */
-  /* grid-template-columns: repeat(6,1fr); */
-  grid-row-gap: 1rem;
+  padding: 3rem 5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 5rem;
+`;
+
+const MainTitle = styled.h1`
+  text-align: center;
+  color: #e31350;
+  font-size: 40px;
+  margin-top: 50px;
+  font-weight: 700;
+`;
+
+const TiendaTitle = styled.span`
+  display: block;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
 `;
 
 const URL_BASE = 'http://35.232.206.25';
 
 const AllRecipes = ({data}) => (
   <Layout>
-    <Container>
-      <h1 className="tiendas-title">Tiendas</h1>
+    <MainTitle>Tiendas</MainTitle>
+    <TiendasGrid>
       {data.allNodeTienda.edges.map(({node}) => (
-        <TiendasGrid key={node.id} >
+        <div key={node.id}>
           <div>
-            <h1>{node.title}</h1>
-            <img width="250px" height="250px" src={URL_BASE.concat(node.relationships.field_portada ? node.relationships.field_portada.uri.url : 'Image not found')} alt=""/>
+            <TiendaTitle>{node.title}</TiendaTitle>
+            <img
+              width="250px"
+              height="250px"
+              src={URL_BASE.concat(
+                node.relationships.field_portada
+                  ? node.relationships.field_portada.uri.url
+                  : 'Image not found'
+              )}
+              alt=""
+            />
             <p>{node.field_horario ? node.field_horario : ''}</p>
           </div>
-        </TiendasGrid>
+        </div>
       ))}
-    </Container>
+    </TiendasGrid>
   </Layout>
 );
 
 export default AllRecipes;
 
 export const tiendas = graphql`
-  query { 
+  query {
     allNodeTienda {
       edges {
         node {
