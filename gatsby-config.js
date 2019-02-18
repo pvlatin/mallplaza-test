@@ -1,31 +1,31 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby with Drupal`,
+    title: 'Gatsby with Drupal'
   },
   plugins: [
     {
-      resolve: `gatsby-source-drupal`,
+      resolve: 'gatsby-source-drupal',
       options: {
-        baseUrl: `http://35.232.206.25/`,
-        apiBase: `jsonapi`,
-      },
+        baseUrl: 'http://35.232.206.25/',
+        apiBase: 'jsonapi'
+      }
     },
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: `UA-93349937-2`,
-      },
+        trackingId: 'UA-93349937-2'
+      }
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-glamor`,
+    'gatsby-plugin-offline',
+    'gatsby-plugin-glamor',
     'gatsby-plugin-sass',
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    { 
-      resolve: `gatsby-plugin-typography`,
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
-    },
-  ],
-}
+        pathToConfigModule: 'src/utils/typography.js'
+      }
+    }
+  ]
+};
