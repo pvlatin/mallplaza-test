@@ -1,0 +1,19 @@
+.c-today {
+    display: flex;
+    align-items: center;
+    background-color: $mp-red;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    padding: 15px 0;
+    h2 {
+        color: $mp-white;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .icon {
+        color: $mp-white;
+        font-size: 20px;
+        font-weight: 700;
+    }
+}

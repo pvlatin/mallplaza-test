@@ -1,0 +1,66 @@
+footer.c-footer {
+  box-shadow: 0 0 8px 5px $light-grey;
+  img {
+    text-align: center;
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  h1 {
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+}
+
+.c-footer-info {
+  padding: 40px 20px;
+  &__help {
+    margin: 30px 20px;
+    list-style-type: none;
+    li {
+      &:not(:last-child) {
+        margin-bottom: 13px;
+      }
+      i {
+        color: inherit;
+        margin-right: 13px;
+      }
+      span {
+        text-align: center;
+      }
+    }
+    &--firstIcon {
+      margin-right: 4px;
+    }
+  }
+  &__rrss {
+    font-size: 25px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+  &__links {
+    list-style-type: none;
+    &__line {
+      margin: 0 20px 40px;
+      position: relative;
+      span {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          height: 1px;
+          width: 100%;
+          background-color: $mp-font-color;
+        }
+      }
+    }
+    li {
+      color: $mp-font-color;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+  }
+}
