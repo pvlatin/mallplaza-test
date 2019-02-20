@@ -40,7 +40,7 @@ export default class News extends Component {
       slidesToScroll: 1
     };
     return (
-      <div className="c-news">
+      <div className="c-news border-margin__bottom">
         <Slider {...settings}>
           <SliderFragment />
           <SliderFragment />

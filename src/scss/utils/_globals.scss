@@ -1,0 +1,22 @@
+$space: 2rem;
+$radius: 30px;
+$padding: 40px;
+$extra-bottom: 1.25rem;
+
+.border-margin {
+  &__top {
+    margin-top: -$space;
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+    padding-top: $space;
+    background-color: $mp-white;
+  }
+  &__bottom {
+    margin-bottom: -$space;
+    border-bottom-right-radius: $radius;
+    border-bottom-left-radius: $radius;
+    padding-bottom: $space + $extra-bottom;
+    background-color: $mp-white;
+  }
+}
+

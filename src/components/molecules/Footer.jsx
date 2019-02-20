@@ -8,9 +8,9 @@ import FooterLinks from './FooterLinks';
 export default class Footer extends Component {
   render() {
     return (
-      <footer className="c-footer">
+      <footer className="c-footer pt-5 border-margin__top">
         <img src={LogoFooter} alt="" srcSet=""/>
-        <h1>contáctanos</h1>
+        <p className="text-center h4 text-uppercase">contáctanos</p>
         <div className="c-footer-info">
           <RRSS />
           <FooterInfo />

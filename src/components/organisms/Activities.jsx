@@ -40,7 +40,7 @@ export default class SimpleSlider extends Component {
       slidesToScroll: 1
     };
     return (
-      <div className="s-activities">
+      <div className="s-activities border-margin__bottom border-margin__top">
         <Slider {...settings}>
           <SliderFragmentActivities />
           <SliderFragmentActivities />
