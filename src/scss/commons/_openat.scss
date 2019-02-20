@@ -1,0 +1,22 @@
+.c-open-at {
+    background-color: $mp-purple;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 30px 0;
+    .icon {
+        margin-right: 10px;
+        color: $mp-white;
+    }
+    &__hours {
+        display: flex;
+        flex-direction: column;
+        &--open {
+            color: $mp-white;
+            margin-bottom: -10px;
+        }
+        &--at {
+            color: $mp-white;
+        }
+    }
+}

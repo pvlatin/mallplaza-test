@@ -1,0 +1,19 @@
+.c-header {
+  img {
+    margin: 0;
+  }
+  padding: 12px 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $mp-white;
+  div {
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-right: 20px;
+      font-size: 21px;
+      color: $mp-black;
+    }
+  }
+}

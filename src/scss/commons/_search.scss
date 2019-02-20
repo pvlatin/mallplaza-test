@@ -1,0 +1,22 @@
+.c-search {
+  background-color: $input-lightGray;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  .icon {
+    transform: translateY(-1px);
+    color: $mp-black;
+    margin-right: 15px;
+  }
+  input {
+    background-color: $input-lightGray;
+    border: none;
+    width: 100%;
+    outline: none;
+    ::placeholder {
+      color: $input-gray;
+    }
+  }
+}
+
+

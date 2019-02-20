@@ -2,12 +2,15 @@
 //bootstrap and proyects theme variables
 // @import "bootstrap/scss/functions";
 
-$prefix:                    'gi-';
-$giwer-red:                 #f55065;
-$giwer-black:               #242424;
-$giwer-grey:                #aeaeb3;
-$giwer-green:               #09b2b8;
-$giwer-font-color:          #595959;
+$prefix:                    'mp-';
+$mp-red:                 #E9004B;
+$mp-black:               #000;
+$mp-white:               #fff;
+$mp-grey:                #aeaeb3;
+$mp-green:               #09b2b8;
+$mp-purple:               #9F26B4;
+$mp-font-color:          #595959;
+
 
 //custom flexbox
 $grid:                      12;
@@ -27,16 +30,16 @@ $facebook:                  #4568b2;
 
 $font-family-base:          'Circular Std','fallback', Helvetica, Arial, sans-serif;
 
-$primary:                   $giwer-red;
-$secondary:                 $giwer-black;
+$primary:                   $mp-red;
+$secondary:                 $mp-black;
 $third:                     #484848;
-$red:                       $giwer-red;
+$red:                       $mp-red;
 $blue:                      #548cff;
 $green:                     #2fdab8;
 
 // Body Elements
 
-$body-color:                $giwer-font-color;
+$body-color:                $mp-font-color;
 $paragraph-margin-bottom:   0;
 $headings-margin-bottom:    0;
 
@@ -60,9 +63,8 @@ $font-weight-normal:        200;
 $font-weight-bold:          900;
 
 //inputs
-$input-btn-focus-width:     1px;
-$input-btn-focus-color:     $giwer-red;
-$input-btn-focus-box-shadow:none;
+$input-lightGray:           #efefef;
+$input-gray:           #969696;
 
 * {
   font-family: 'Raleway', sans-serif !important;
