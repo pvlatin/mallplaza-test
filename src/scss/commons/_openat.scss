@@ -1,26 +1,17 @@
 .c-open-at {
     background-color: $mp-purple;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    margin: 10px 0;
     .icon {
-        margin-right: 11px;
         color: $mp-white;
         font-size: 20px;
     }
     &__hours {
+        display: inherit;
         flex-direction: column;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: $mp-white;
         &--open {
-            letter-spacing: 1px;
-            color: $mp-white;
             margin-bottom: -9px;
-            font-weight: 600;
-        }
-        &--at {
-            letter-spacing: 1px;
-            font-weight: 600;
-            color: $mp-white;
         }
     }
 }
