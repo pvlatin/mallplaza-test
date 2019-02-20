@@ -1,13 +1,11 @@
 footer.c-footer {
-  padding: 40px 0 0;
+  box-shadow: 0 0 8px 5px $light-grey;
   img {
     text-align: center;
     display: block;
     margin: 0 auto 30px auto;
   }
   h1 {
-    text-align: center;
-    text-transform: uppercase;
     font-size: 21px;
     letter-spacing: 2px;
     font-weight: 600;
