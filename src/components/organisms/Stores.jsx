@@ -14,6 +14,7 @@ export default class Stores extends Component {
       initialSlide: 0,
       centerMode: false,
       slidesToShow: 2.15,
+      arrows: false,
       swipeToSlide: true,
       rtl: true,
       slidesToScroll: 1

@@ -20,3 +20,7 @@ $extra-bottom: 1.25rem;
   }
 }
 
+.pos-fixed {
+  position: fixed;
+  z-index: 100;
+}

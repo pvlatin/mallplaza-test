@@ -3,28 +3,40 @@
   position: relative;
   border-radius: 5px;
   margin-right: 9px;
+  transition: .3s all;
   /* display: flex;
-    transform: rotate(90deg); */
+  transform: rotate(90deg); */
   &:before {
     content: "";
+    transition: .3s all;
     position: absolute;
-    height: 3px;
+    height: 2px;
     top: 70%;
     left: 50%;
-    width: 20px;
+    width: 24px;
     border-radius: 23%;
     background-color: $mp-black;
-    transform: translate(-50%, -50%);
+    transform: rotate(0deg) translate(-50%, -50%);
   }
   &:after {
     content: "";
+    transition: .3s all;
     position: absolute;
-    height: 3px;
+    height: 2px;
     top: 35%;
-    width: 20px;
+    width: 24px;
     left: 50%;
     border-radius: 23%;
-    transform: translate(-50%, -50%);
+    transform: rotate(0deg) translate(-50%, -50%);
     background-color: $mp-black;
+  }
+}
+
+.hamburgerPressed {
+  &:before {
+    transform: rotate(135deg) translate(3px, 12px);
+  }
+  &:after {
+    transform: rotate(225deg) translate(6px, -9px);
   }
 }

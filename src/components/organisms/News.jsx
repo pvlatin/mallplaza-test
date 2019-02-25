@@ -35,6 +35,7 @@ export default class News extends Component {
       autoplaySpeed: 5000,
       autoplay: true,
       fade: true,
+      arrows: false,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1

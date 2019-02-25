@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faFacebookSquare, faTwitter, faYoutubeSquare, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
 
 const RRSS = props => (
-  <React.Fragment className="c-footer-info__rrss">
+  <div className="c-footer-info__rrss">
     <ul className="container c-footer-info__rrss">
       <li className="c-footer-info__rrss__icon">
         <FontAwesomeIcon icon={faFacebookSquare} />
@@ -21,7 +21,7 @@ const RRSS = props => (
         <FontAwesomeIcon icon={faLinkedin} />
       </li>
     </ul>
-  </React.Fragment>
+  </div>
 );
 
 export default RRSS;

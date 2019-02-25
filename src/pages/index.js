@@ -4,6 +4,7 @@ import Layout from '../layouts';
 import styled from 'styled-components';
 import Landing from '../components/templates/Landing';
 
+
 // const TiendasGrid = styled.div`
 //   display: grid;
 //   padding: 3rem 5rem;
