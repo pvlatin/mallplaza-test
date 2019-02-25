@@ -8,11 +8,12 @@ import {faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons';
 export default class Header extends Component {
   render() {
     return (
-      <header className="c-header container">
+      <header
+        className="c-header container">
         <img src={Logo} alt="" srcSet="" />
         <div>
           <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
-          <Hamburger />
+          <Hamburger show={this.props.show} menuToggler={this.props.menuClickHandler}/>
         </div>
       </header>
     );

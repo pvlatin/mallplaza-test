@@ -1,12 +1,15 @@
 .c-search {
+  margin-top: 55px;
   background-color: $input-lightGray;
   display: flex;
+  position: relative;
   align-items: center;
   height: 50px;
   .icon {
     transform: translateY(-1px);
     color: $mp-black;
     margin-right: 15px;
+    font-size: 19px;
   }
   input {
     background-color: $input-lightGray;
