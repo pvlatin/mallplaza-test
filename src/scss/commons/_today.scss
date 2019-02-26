@@ -1,13 +1,14 @@
 .c-today {
     display: flex;
     align-items: center;
-    background-color: $mp-red;
+    background-color: rgb(48, 165, 48);
     justify-content: space-between;
-    margin-bottom: 3px;
-    padding: 15px 0;
+    padding: 40px 0 15px;
+    margin-top: -22px;
     h2 {
         color: $mp-white;
         font-size: 16px;
+        letter-spacing: 2px;
         font-weight: 600;
         text-transform: uppercase;
     }
@@ -17,3 +18,4 @@
         font-weight: 700;
     }
 }
+
