@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faFacebookSquare, faTwitter, faYoutubeSquare, faInstagram, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faFacebookSquare, faTwitter, faYoutubeSquare, faInstagram, faLinkedin, faYoutube} from '@fortawesome/free-brands-svg-icons';
 
 const RRSS = props => (
   <div className="c-footer-info__rrss">
@@ -12,7 +12,7 @@ const RRSS = props => (
         <FontAwesomeIcon icon={faTwitter} />
       </li>
       <li className="c-footer-info__rrss__icon">
-        <FontAwesomeIcon icon={faYoutubeSquare} />
+        <FontAwesomeIcon icon={faYoutube} />
       </li>
       <li className="c-footer-info__rrss__icon">
         <FontAwesomeIcon icon={faInstagram} />
