@@ -8,7 +8,7 @@ import TodayToggled from '../organisms/TodayToggled';
 
 const Landing = props => {
   const [state, setState] = useState({
-    todayIsOpen: true
+    todayIsOpen: false
   });
 
   const todayToggle = () => {

@@ -5,7 +5,7 @@ import {faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons';
 
 const Today = props => {
   let currentIcon;
-  if (props.toggleToday) {
+  if (props.show) {
     currentIcon = faAngleDown;
   } else {
     currentIcon = faAngleUp;
