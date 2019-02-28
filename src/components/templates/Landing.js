@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import Today from '../molecules/Today';
 import News from '../organisms/News';
 import Stores from '../organisms/Stores';
@@ -6,31 +6,28 @@ import Activities from '../organisms/Activities';
 import OpenAt from '../molecules/OpenAt';
 import TodayToggled from '../organisms/TodayToggled';
 
-export default class Landing extends Component {
-  constructor(props) {
-    super(props);
-    this.todayToggle = this.todayToggle.bind(this);
-    this.state = {
-      todayIsOpen: false
-    };
-  }
+const Landing = props => {
+  const [state, setState] = useState({
+    todayIsOpen: true
+  });
 
-  todayToggle() {
-    this.setState(prevState => ({
+  const todayToggle = () => {
+    setState(prevState => ({
       todayIsOpen: !prevState.todayIsOpen
     }));
-  }
+  };
 
-  render() {
-    return (
-      <React.Fragment>
-        <News />
-        <TodayToggled show={this.state.todayIsOpen}/>
-        <Today toggleToday={this.todayToggle} />
-        <Stores />
-        <Activities />
-        <OpenAt />
-      </React.Fragment>
-    );
-  }
-}
+  const content = (
+    <>
+      <News />
+      <TodayToggled show={state.todayIsOpen} />
+      <Today toggleToday={todayToggle} show={state.todayIsOpen}/>
+      <Stores />
+      <Activities />
+      <OpenAt />
+    </>
+  );
+  return content;
+};
+
+export default Landing;
