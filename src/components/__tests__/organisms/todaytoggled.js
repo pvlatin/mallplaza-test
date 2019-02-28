@@ -1,12 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-import Header from '../../molecules/Footer';
+import TodayToggled from '../../organisms/TodayToggled';
 
-describe('Header', () => {
+describe('News', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create(<Header siteTitle="Default Starter" />)
+      .create(<TodayToggled siteTitle="Default Starter" />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

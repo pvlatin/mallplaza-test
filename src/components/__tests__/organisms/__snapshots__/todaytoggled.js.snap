@@ -1,0 +1,157 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`News renders correctly 1`] = `
+<div
+  className="c-todayToggled"
+>
+  <span
+    className="c-todayToggled__subtitle"
+  >
+    Qué está pasando
+  </span>
+  <h1
+    className="c-todayToggled__title"
+  >
+    hoy en mallplaza
+  </h1>
+  <div
+    className="c-today-tabs"
+    data-tabs={true}
+    onClick={[Function]}
+    onKeyDown={[Function]}
+  >
+    <ul
+      className="c-today-tabs__tabs"
+      role="tablist"
+    >
+      <li
+        aria-controls="react-tabs-1"
+        aria-disabled="false"
+        aria-selected="false"
+        className="c-today-tabs__tab"
+        id="react-tabs-0"
+        role="tab"
+        tabIndex={null}
+      >
+        panoramas
+      </li>
+      <li
+        aria-controls="react-tabs-3"
+        aria-disabled="false"
+        aria-selected="true"
+        className="c-today-tabs__tab react-tabs__tab--selected"
+        id="react-tabs-2"
+        role="tab"
+        tabIndex="0"
+      >
+        horarios
+      </li>
+      <li
+        aria-controls="react-tabs-5"
+        aria-disabled="false"
+        aria-selected="false"
+        className="c-today-tabs__tab"
+        id="react-tabs-4"
+        role="tab"
+        tabIndex={null}
+      >
+        descuentos
+      </li>
+    </ul>
+    <div
+      aria-labelledby="react-tabs-0"
+      className="c-today-tabs__panel"
+      id="react-tabs-1"
+      role="tabpanel"
+    />
+    <div
+      aria-labelledby="react-tabs-2"
+      className="c-today-tabs__panel react-tabs__tab-panel--selected"
+      id="react-tabs-3"
+      role="tabpanel"
+    >
+      <div
+        className="c-today-tabs__info"
+      >
+        <div
+          className="c-today-tabs__info__main"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-clock fa-w-16 icon"
+            data-icon="clock"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          <span
+            className="c-today-tabs__info-title"
+          >
+            abierto ahora
+          </span>
+          <span
+            className="c-today-tabs__info-subtitle"
+          >
+            hasta las 21:30hrs
+          </span>
+        </div>
+        <ul
+          className="c-today-tabs__info-list"
+        >
+          <li>
+            <strong>
+              <span
+                className="text-bold mr-20"
+              >
+                Estacionamiento:
+              </span>
+            </strong>
+            <span>
+              07:00 a 21:30hrs
+            </span>
+          </li>
+          <li>
+            <strong>
+              <span
+                className="text-bold mr-20"
+              >
+                Patio de Comidas:
+              </span>
+            </strong>
+            <span>
+              10:00 a 22:00hrs
+            </span>
+          </li>
+          <li>
+            <strong>
+              <span
+                className="text-bold mr-20"
+              >
+                La Azotea:
+              </span>
+            </strong>
+            <span>
+              10:00 a 00:00hrs
+            </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div
+      aria-labelledby="react-tabs-4"
+      className="c-today-tabs__panel"
+      id="react-tabs-5"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
