@@ -31,7 +31,7 @@ export default class TodayToggled extends Component {
               <div className="c-today-tabs__info__main">
                 <FontAwesomeIcon icon={faClock} className="icon" />
                 <span className="c-today-tabs__info-title">abierto ahora</span>
-                <span className="c-today-tabs__info-subtitle">
+                <span className="c-today-tabs__info-subtitle">tda
                   hasta las 21:30hrs
                 </span>
               </div>

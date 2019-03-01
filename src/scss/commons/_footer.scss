@@ -63,3 +63,15 @@ footer.c-footer {
     }
   }
 }
+
+.scroll-footer {
+  padding: 20px 195px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: transparent;
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
