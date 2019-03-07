@@ -239,6 +239,11 @@ exports[`Header renders correctly 1`] = `
     <span>
       volver arriba
     </span>
+    <button
+      className="scroll scroll-footer"
+      onClick={[Function]}
+      title="Back to top"
+    />
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-angle-up fa-w-10 c-gototop__icon"

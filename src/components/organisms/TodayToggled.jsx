@@ -1,17 +1,17 @@
-import React, {Component} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDown,
   faClock,
   faUserClock
-} from '@fortawesome/free-solid-svg-icons';
-import {Tab, Tabs, TabList, TabPanel} from 'react-tabs';
+} from "@fortawesome/free-solid-svg-icons";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 export default class TodayToggled extends Component {
   render() {
-    let todayClasses = 'c-todayToggled';
+    let todayClasses = "c-todayToggled";
     if (this.props.show) {
-      todayClasses = 'c-todayToggled todayIsOpen';
+      todayClasses = "c-todayToggled todayIsOpen";
     }
     return (
       <div className={todayClasses}>
@@ -31,8 +31,8 @@ export default class TodayToggled extends Component {
               <div className="c-today-tabs__info__main">
                 <FontAwesomeIcon icon={faClock} className="icon" />
                 <span className="c-today-tabs__info-title">abierto ahora</span>
-                <span className="c-today-tabs__info-subtitle">tda
-                  hasta las 21:30hrs
+                <span className="c-today-tabs__info-subtitle">
+                  tda hasta las 21:30hrs
                 </span>
               </div>
               <ul className="c-today-tabs__info-list">

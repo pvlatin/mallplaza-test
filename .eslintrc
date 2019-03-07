@@ -7,12 +7,10 @@
   "parserOptions": {
     "ecmaVersion": 8,
     "ecmaFeatures": {
-      "jsx": true,
-      "experimentalObjectRestSpread": true
+      "jsx": true
     },
     "sourceType": "module"
   },
-  "extends": ["eslint:recommended" , "plugin:react/recommended"],
   "rules": {
     "comma-dangle": [2, "never"],
     "computed-property-spacing": [2, "never"],
@@ -198,13 +196,5 @@
     "no-prototype-builtins": 2,
     "prefer-template": 2,
     "template-curly-spacing": [2, "never"]
-  },
-  "settings": {
-    "react": {
-      "createClass": "createReactClass",
-      "pragma": "React",
-      "version": "16.3.3",
-      "flowVersion": "0.53"
-    }
   }
 }

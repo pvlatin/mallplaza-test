@@ -3,6 +3,10 @@ $radius: 30px;
 $padding: 40px;
 $extra-bottom: 1.25rem;
 
+img {
+  margin: 0;
+}
+
 .border-margin {
   &__top {
     margin-top: -$space;

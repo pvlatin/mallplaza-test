@@ -4,11 +4,15 @@ exports[`Header renders correctly 1`] = `
 <header
   className="c-header container"
 >
-  <img
-    alt=""
-    src="test-file-stub"
-    srcSet=""
-  />
+  <a
+    href=""
+  >
+    <img
+      alt=""
+      src="test-file-stub"
+      srcSet=""
+    />
+  </a>
   <div>
     <svg
       aria-hidden="true"

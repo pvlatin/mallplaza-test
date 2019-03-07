@@ -10,7 +10,9 @@ export default class Header extends Component {
     return (
       <header
         className="c-header container">
-        <img src={Logo} alt="" srcSet="" />
+        <a href="">
+          <img src={Logo} alt="" srcSet="" />
+        </a>
         <div>
           <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
           <Hamburger show={this.props.show} menuToggler={this.props.menuClickHandler}/>

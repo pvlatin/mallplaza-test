@@ -1,0 +1,19 @@
+.section-title {
+    padding: 2rem 0;
+    background: $mp-white;
+    position: relative;
+    &__icon-back {
+        position: absolute;
+        font-size: 30px;
+        float: left;
+        top: 50%;
+        left: 25px;
+        transform: translate(-50%, -52%);
+    }
+    &__title {
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+}
